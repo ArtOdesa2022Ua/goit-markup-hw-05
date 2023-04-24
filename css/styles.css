@@ -44,6 +44,8 @@ img {
     letter-spacing: 0.02em;
     color: #2E2F42;
     list-style: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link {
     text-decoration: none;
@@ -52,6 +54,8 @@ img {
 .link:hover,
 .link:focus {
     color: var(--color-ocean);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 :focus {
@@ -61,12 +65,12 @@ img {
 .list {
     display: flex;
     gap: 40px;
-    font-weight: 500;
-    font-size: 20px;
+    list-style: none;
+
+    /* font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
-    list-style: none;
+    color: #2E2F42; */
 }
 
 /* ----------------- Body END ----------------- */
@@ -82,24 +86,28 @@ img {
     align-items: center;
 }
 .container {
+    padding: 0 15px;
     margin: 0 auto;
     width: 1158px;
-    padding: 0 15px;
 }
 .navigation {
-    margin-right: auto;
     display: flex;
     align-items: center;
+    margin-right: auto;
 }
 .logo {
     margin-right: 76px;
+
     font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
     color: var(--color-iris);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .studio link {
@@ -107,13 +115,13 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
     color: var(--color-grey);
 }
 
 .contacts link {
     font-style: normal;
 }
-
 
 .logo:hover {
     color: var(--color-ocean);
@@ -136,6 +144,8 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address {
     margin-right: 0;
@@ -368,26 +378,31 @@ img {
 
 .clients-list {
     display: flex;
-    align-items: center;
     gap: 24px;
 }
 .clisent {
+    width: calc((100% - 120px) / 6);
+    height: 88px;
+}
+.clients-link {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    color: var(--color-light-slate);
+    height: 100%;
     width: 168px;
-    height: 88px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
-    fill:#8E8F99;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clisent:hover,
-.clisent:focus {
-    fill: var(--color-ocean);
+.clients-link:hover,
+.clients-link:focus {
     border-color: var(--color-ocean);
-    transition-duration: 250ms;
+    color: var(--color-ocean);
 }
-.clisent {
+.clisent-icon {
     fill: currentColor;
 }
 /* ----------------- section 5 end ----------------- */
